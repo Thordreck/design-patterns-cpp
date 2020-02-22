@@ -6,3 +6,4 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 
 add_subdirectory(specification)
+add_subdirectory(liskov_substitution)
