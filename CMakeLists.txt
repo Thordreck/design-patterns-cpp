@@ -7,3 +7,4 @@ endif()
 
 add_subdirectory(specification)
 add_subdirectory(liskov_substitution)
+add_subdirectory(interface_segregation)
