@@ -6,4 +6,5 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 
 add_executable(${PROJECT_NAME} src/main.cpp)
+target_compile_options(${PROJECT_NAME} PUBLIC -std=c++11)
 target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Werror -Wfatal-errors -Wl,--no-undefined)
