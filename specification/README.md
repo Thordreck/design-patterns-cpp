@@ -1,1 +1,4 @@
-Example of the specification pattern.
+# Specification Pattern
+Snippet code showcasing the use of the specification pattern.
+The code implements a simple class called `Product` with several properties. Given the requirement to be able to filter products by its different properties, a simple common approach would be to add `filter` method directly in `Product`. Going down this route would mean that a new method has to be added for each new filter (aka, `filter_by_size()`, `filter_by_color()` and so on).
+This goes against the `Open-closed` principle. Tested modules and interfaces should be left untouched (closed) as much as possible, but open to expansion by means of inheritance. As such, this snippet implements two interfaces: a templatized `Specification` class and a templatized `Filter` class. The filter class returns all the items that satisfy the specifications provided. New specifications can be implementing by inheriting from the base `Specification` class, thus removing the need of modifying the `Product` class itself.
